@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="./js/script.js" defer></script>
+  <title>Windows 7</title>
+</head>
+<body>
+  <div class = "desktop">
+    <div class="desktop__wallpaper">
+    <div class="desktop__icons">
+      <div class="icon" id="my-computer">
+        <img src="images/my-computer.png" class="icon__image" alt="my computer"><span class="icon__text">My Computer</span>
+      </div>
+      <div class="icon" id="recycle-bin">
+        <img src="images/recycle-bin.png" class="icon__image" alt="recycle bin"><span class="icon__text">Recycle Bin</span>
+      </div>
+      <div class="icon" id="google-chrome">
+        <img src="images/google-chrome.png" class="icon__image" alt="Google Chrome"><span class="icon__text">Google Chrome</span>
+      </div>
+      <div class="icon" id="notepad">
+        <img src="images/notepad.webp" class="icon__image"  id= "notepadApp" alt="Notepad" ><span class="icon__text">Notepad</span>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+                <h4>*Untitled - Notepad</h4>     
+          </div>
+          <div class="modal-body">
+            <p>Welcome to Notepad!</p>
+            <p>Let's get started!</p>
+          </div>
+          
+           
+          </div>
+        </div>
+     
+      </div>
+    </div>
+    <div class="taskbar">
+      <div class="taskbar__icon" id="start-menu">
+        <img src="images/start-menu.png" class="taskbar__icon__image" alt="start menu">
+        <div class="dropup-content">
+          <a href="#"> <img src="images/File_Explorer_23583.png" class="dropup-content-image" alt="file-explorer">File Explorer</a>
+          <a href="#"><img src="images/my-computer.png" class="dropup-content-image" alt="my computer">My Computer</a>
+          <a href="#"><img src="images/google-chrome.png" class="dropup-content-image" alt="Google Chrome">Google Chrome</a>  
+          <a href="#"><img src="images/notepad.webp" class="dropup-content-image" alt="notepad">Notepad</a>  
+        </div> 
+      </div>
+      <div class="taskbar-icon" id="file-explorer">
+        <img src="images/File_Explorer_23583.png" class="taskbar__icon__image" alt="file-explorer">
+      </div>
+      <div class="taskbar-icon" id="internet-explorer">
+        <img src="images/internet_explorer_logo.svg" class="taskbar__icon__image" alt="internet-explorer">
+      </div>
+      <div id="datetime"></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
