@@ -72,7 +72,7 @@
 }
 
 /* Dropup content (Hidden by Default) */
-.dropup-content {
+.dropup {
   display: none;
   position: absolute;
   bottom: 60px;
@@ -82,28 +82,23 @@
   z-index: 1;
   border-radius: 4px;
 }
-
-.dropup-content-image {
+.dropup__image {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-
-/* Links inside the dropup */
-.dropup-content a {
+.dropup__link {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   border-radius: 2px;
 }
-
-/* Change color of dropup links on hover */
-.dropup-content a:hover {
+.dropup__link:hover {
   background-color: rgb(165, 215, 246);
 }
 
-#start-menu:hover .dropup-content {
+#startMenu:hover .dropup {
   display: block;
 }
 
@@ -118,8 +113,7 @@
   height: 100%;
   overflow: auto;
 }
-
-.modal-content {
+.modal__content {
   margin: auto;
   max-width: 600px;
   height: 500px;
@@ -127,34 +121,43 @@
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-/* The Close Button */
-.close {
+.modal__close {
   color: rgba(170, 170, 170, 0.6666666667);
   font-size: 28px;
   font-weight: bold;
   float: right;
 }
-
-.close:hover,
-.close:focus {
+.modal__close:hover, .modal__close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
-/* Modal Header */
-.modal-header {
+.modal__header {
   border-bottom: 1px solid gray;
-  color: black;
-  padding: 10px;
+  color: rgb(54, 54, 54);
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.modal__body {
+  margin-top: 20px;
+  height: 520px;
+  padding: 2px 16px;
+}
+.modal__body__image {
+  width: 500px;
+  height: 200px;
 }
 
-/* Modal Body */
-.modal-body {
-  margin-top: 20px;
-  height: 320px;
-  padding: 2px 16px;
+.notepad__link {
+  color: black;
+  padding: 10px 8px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.notepad__link:hover {
+  font-weight: bold;
 }
 
 #datetime {
@@ -163,6 +166,38 @@
   color: white;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.recycle {
+  display: flex;
+  justify-content: space-around;
+}
+.recycle__content {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.recycle__button {
+  color: white;
+  background-color: rgb(64, 150, 221);
+  border-color: rgb(64, 150, 221);
+  border-radius: 5px;
+  padding: 2px 5px;
+  float: right;
+}
+
+.computer {
+  display: flex;
+  justify-content: space-around;
+}
+.computer__content {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

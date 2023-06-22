@@ -1,16 +1,43 @@
-let modal = document.getElementById("myModal");
-let closeBtn = document.getElementsByClassName("close")[0];
-function openModal() {
-  modal.style.display = "block";
-}
-function closeModal() {
-  modal.style.display = "none";
-}
-let app = document.getElementById("notepadApp");
-app.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
+let computerApp = document.getElementById("computerApp");
+let recycleApp = document.getElementById("recycleApp");
+let chromeApp = document.getElementById("chromeApp");
+let notepadApp = document.getElementById("notepadApp");
 
+let computerModal = document.getElementById("computerModal");
+let recycleModal = document.getElementById("recycleModal");
+let chromeModal = document.getElementById("chromeModal");
+let notepadModal = document.getElementById("notepadModal");
 
+const modalArr = [computerModal,recycleModal,chromeModal, notepadModal];
+let closeBtn = document.querySelectorAll(".modal__close");
+
+function openModal(modalEl) {
+  modalEl.style.display = "block";
+}
+
+function closeModal(modalEl) {
+  modalEl.style.display = "none";
+}
+
+computerApp.addEventListener("click", () => {
+  openModal(computerModal);
+});
+
+recycleApp.addEventListener("click", () => {
+  openModal(recycleModal);
+});
+
+chromeApp.addEventListener("click", () => {
+  openModal(chromeModal);
+});
+
+notepadApp.addEventListener("click", () => {
+  openModal(notepadModal);
+});
+
+closeBtn.forEach((btn,index) => btn.addEventListener("click", () => {
+   closeModal(modalArr[index]);
+}))
 
 
 function formatDate(date) {
@@ -33,7 +60,7 @@ const getCurrentDateTime = () => {
   let month = months[currentDateTime.getMonth()];
 
   let date = currentDateTime.getDate();
-  const days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
  
   let day = days[currentDateTime.getDay()];
   let formattedDateTime = day+ " "+date+ " "+month+ " "+ formatDate(currentDateTime);
