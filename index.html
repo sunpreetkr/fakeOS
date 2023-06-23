@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="./js/script.js" defer></script>
+  <title>Windows 7</title>
+</head>
+<body>
+  <div class = "desktop">
+    <div class="desktop__wallpaper">
+     <div class="desktop__icons">
+      <div class="icon" id="myComputer">
+        <img src="images/my-computer.png" class="icon__image" id="computerApp" alt="my computer"><span class="icon__text">My Computer</span>
+        <div id="computerModal" class="modal">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="modal__close">&times;</span>
+                <h4>My Computer</h4>     
+          </div>
+          <div class="modal__body">          
+            <div class="computer">         
+              <div class="computer__content">
+                <img src="images/folder-image.png" class="computer__image"/> 
+                <span>Images</span> 
+              </div>
+              <div class="computer__content">
+                <img src="images/folder-image.png" class="computer__image"   /> 
+                <span>Documents</span> 
+              </div>
+              <div class="computer__content">
+                <img src="images/folder-image.png" class="computer__image"   /> 
+                <span>Music</span> 
+              </div>
+              <div class="computer__content">
+                <img src="images/folder-image.png" class="computer__image"   /> 
+                <span>Files</span> 
+              </div>          
+              
+            </div>      
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon" id="recycleBin">
+        <img src="images/recycle-bin.png" class="icon__image" id = "recycleApp"  alt="recycle bin"><span class="icon__text">Recycle Bin</span>
+        <div id="recycleModal" class="modal">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="modal__close">&times;</span>
+                <h4>Recycle Bin</h4>     
+          </div>
+          <div class="modal__body"> 
+            <div>
+              <button class="recycle__button">Empty</button>    
+            </div>          
+            <div class="recycle">         
+              <div class="recycle__content">
+                <img src="images/folder-image.png" class="recycle__image"   /> 
+                <span>Images</span> 
+              </div>
+              <div class="recycle__content">
+                <img src="images/folder-image.png" class="recycle__image"   /> 
+                <span>Documents</span> 
+              </div>
+              <div class="recycle__content">
+                <img src="images/folder-image.png" class="recycle__image"   /> 
+                <span>Music</span> 
+              </div>
+              <div class="recycle__content">
+                <img src="images/folder-image.png" class="recycle__image"   /> 
+                <span>Files</span> 
+              </div>
+             
+              
+            </div> 
+           
+            
+           
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon" id="googleChrome">
+        <img src="images/google-chrome.png" class="icon__image" id= "chromeApp"alt="Google Chrome"><span class="icon__text">Google Chrome</span>
+        <div id="chromeModal" class="modal">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="modal__close">&times;</span>
+                <h4>New Tab - Chrome</h4>     
+          </div>
+          <div class="modal__body">  
+            <img src="images/chrome-bg.png" class="modal__body__image"   alt="Google Chrome"/>   
+             
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon" id="notepad">
+        <img src="images/notepad.webp" class="icon__image"  id= "notepadApp" alt="Notepad" ><span class="icon__text">Notepad</span>
+        <div id="notepadModal" class="modal">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="modal__close">&times;</span>
+                <h4>*Untitled - Notepad</h4>   
+                <div class="notepad">
+                  <a href="#" class = "notepad__link">File</a>
+                  <a href="#" class = "notepad__link">Edit</a>
+                  <a href="#" class = "notepad__link">Format</a>
+                  <a href="#" class = "notepad__link" >View</a>
+                  <a href="#" class = "notepad__link" >Help</a>
+                 
+                </div>   
+          </div>
+          <div class="modal__body">
+            <p>Welcome to Notepad!</p>
+            <p>Let's get started!</p>
+          </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+    <div class="taskbar">
+      <div class="taskbar__icon" id="startMenu">
+        <img src="images/start-menu.png" class="taskbar__icon__image" alt="start menu">
+        <div id= "dropup" class="dropup">
+          <a href="#" class="dropup__link"> <img src="images/File_Explorer_23583.png" class="dropup__image" alt="file-explorer">File Explorer</a>
+          <a href="#" class="dropup__link"><img src="images/my-computer.png" class="dropup__image" alt="my computer">My Computer</a>
+          <a href="#" class="dropup__link"><img src="images/google-chrome.png" class="dropup__image" alt="Google Chrome">Google Chrome</a>  
+          <a href="#" class="dropup__link"><img src="images/notepad.webp" class="dropup__image" alt="notepad">Notepad</a>  
+        </div> 
+      </div>
+      <div class="taskbar__icon" id="fileExplorer">
+        <img src="images/File_Explorer_23583.png" class="taskbar__icon__image" alt="file-explorer">
+      </div>
+      <div class="taskbar__icon" id="internetExplorer">
+        <img src="images/internet_explorer_logo.svg" class="taskbar__icon__image" alt="internet-explorer">
+      </div>
+      <div id="datetime"></div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
