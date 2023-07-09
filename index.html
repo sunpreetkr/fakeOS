@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css" />
-  <script src="./js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js" defer type="module" ></script>
   <title>Windows 7</title>
 </head>
 <body>
@@ -22,26 +23,63 @@
           <div class="modal__body">          
             <div class="computer">         
               <div class="computer__content">
-                <img src="images/folder-image.png" class="computer__image"/> 
-                <span>Images</span> 
+                <img src="images/folder-image.png" class="icon__image"/> 
+                <span class="computer__text">Images</span> 
               </div>
               <div class="computer__content">
                 <img src="images/folder-image.png" class="computer__image"   /> 
-                <span>Documents</span> 
+                <span class="computer__text">Documents</span> 
               </div>
               <div class="computer__content">
                 <img src="images/folder-image.png" class="computer__image"   /> 
-                <span>Music</span> 
+                <span class="computer__text">Music</span> 
               </div>
               <div class="computer__content">
                 <img src="images/folder-image.png" class="computer__image"   /> 
-                <span>Files</span> 
+                <span class="computer__text">Files</span> 
               </div>          
               
             </div>      
           </div>
           </div>
         </div>
+
+
+        <div id="imageFolderModal" class="modal">
+          <div class="modal__content">
+            <div class="modal__header">
+              <span class="modal__close">&times;</span>
+                <h4>My Images</h4>     
+          </div>
+          <div class="modal__body">          
+            <div class="computer__images">         
+              <div class="computer__images__content">
+                <img src="images/happy-animal.jpeg" class="computer__images__item"/> 
+                <span class="computer__images__text">happy-animal.jpeg</span> 
+              </div>
+              <div class="computer__images__content">
+                <img src="images/pets.jpeg" class="computer__images__item"   /> 
+                <span class="computer__images__text">pets.jpeg</span> 
+              </div>
+              <div class="computer__images__content">
+                <img src="images/dogs.jpeg" class="computer__images__item"   /> 
+                <span class="computer__images__text">dogs.jpeg</span> 
+              </div>
+              <div class="computer__images__content">
+                <img src="images/dog-and-cat.jpeg" class="computer__images__item"   /> 
+                <span class="computer__images__text">dog-and-cat.jpeg</span> 
+              </div>        
+              <div class="computer__images__content">
+                <img src="images/cute-animals.jpeg" class="computer__images__item"   /> 
+                <span class="computer__images__text">cute-animals.jpeg</span> 
+              </div>  
+              
+            </div>      
+          </div>
+          </div>
+        </div>
+
+
       </div>
       <div class="icon" id="recycleBin">
         <img src="images/recycle-bin.png" class="icon__image" id = "recycleApp"  alt="recycle bin"><span class="icon__text">Recycle Bin</span>
@@ -83,7 +121,7 @@
         </div>
       </div>
       <div class="icon" id="googleChrome">
-        <img src="images/google-chrome.png" class="icon__image" id= "chromeApp"alt="Google Chrome"><span class="icon__text">Google Chrome</span>
+        <img src="images/google-chrome.png" class="icon__image" id= "chromeApp" alt="Google Chrome"><span class="icon__text">Google Chrome</span>
         <div id="chromeModal" class="modal">
           <div class="modal__content">
             <div class="modal__header">
@@ -91,31 +129,37 @@
                 <h4>New Tab - Chrome</h4>     
           </div>
           <div class="modal__body">  
-            <img src="images/chrome-bg.png" class="modal__body__image"   alt="Google Chrome"/>   
+            <img src="images/google.png" class="modal__body__image"   alt="Google Chrome"/>   
+            <div class="search-box">
+              <div class="row">
+                <input type="text" id="input-box" placeholder="Search cities in Australia" autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="result-box">
+              </div>
+
+            </div>
              
           </div>
           </div>
         </div>
       </div>
-      <div class="icon" id="notepad">
-        <img src="images/notepad.webp" class="icon__image"  id= "notepadApp" alt="Notepad" ><span class="icon__text">Notepad</span>
-        <div id="notepadModal" class="modal">
+      <div class="icon" id="notes">
+        <img src="images/notes.png" class="icon__image"  id= "notesApp" alt="Notes" ><span class="icon__text">Notes</span>
+        <div id="notesModal" class="modal">
           <div class="modal__content">
             <div class="modal__header">
               <span class="modal__close">&times;</span>
-                <h4>*Untitled - Notepad</h4>   
-                <div class="notepad">
-                  <a href="#" class = "notepad__link">File</a>
-                  <a href="#" class = "notepad__link">Edit</a>
-                  <a href="#" class = "notepad__link">Format</a>
-                  <a href="#" class = "notepad__link" >View</a>
-                  <a href="#" class = "notepad__link" >Help</a>
-                 
-                </div>   
+                <h4>My Notes</h4>   
+              
           </div>
           <div class="modal__body">
-            <p>Welcome to Notepad!</p>
-            <p>Let's get started!</p>
+            <div class="container">
+              <p>Welcome to Notes</p>
+              <button class="notesBtn"><i class="fas fa-edit" style="margin-right: 10px;"></i>Create Notes</button>
+              <div class="notes-container">
+              </div>
+            </div>
           </div>
           </div>
         </div>
@@ -137,9 +181,9 @@
       </div>
       <div class="taskbar__icon" id="internetExplorer">
         <img src="images/internet_explorer_logo.svg" class="taskbar__icon__image" alt="internet-explorer">
-      </div>
-      <div id="datetime"></div>
+      </div>  
     </div>
+    <div id="datetime"></div>
   </div>
   </div>
 </body>
