@@ -35,7 +35,12 @@ inputBox.onkeyup =  function(){
 
  function display(result){
   const content = result.map((list) => {
-    return "<li onclick = selectInput(this)>" + list + "</li>";
+    const el = document.createElement("li");
+    el.addEventListener("click", () => {
+      selectInput(this);
+
+    });
+    return el;
   });
   resultBox.innerHTML = "<ul>" + content.join('')+ "</ul>";
 }
@@ -43,6 +48,7 @@ inputBox.onkeyup =  function(){
  function selectInput(list){
   inputBox.value =list.innerHTML;
   resultBox.innerHTML = '';
+  console.log("it works");
 }
 
 const notesContainer = document.querySelector(".notes-container");
